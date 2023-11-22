@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Git hub Profile</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: gray;
+    }
+
+    .main {
+        background-image: url(https://github.blog/wp-content/uploads/2023/09/25ad265b-b9e2-43cf-81d4-cafe4f3c2526-1200x630-1.png?resize=1200%2C630);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 0.8rem;
+    }
+
+    .card {
+        height: 60vh;
+        width: 25vw;
+        border-radius: 10px;
+        background-color: white;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .card>img {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: black solid;
+    }
+
+    .card>a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color:rgb(50, 144, 154);
+    }
+
+    form>label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    form>#search {
+        width: 20vw;
+        height: 7vh;
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    #srcBtn {
+        margin-left: 6px;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <form action="">
+            <label for="search">Search github profile</label>
+            <input type="text" id="search" placeholder="username">
+            <i class="ri-search-2-line" type="submit" id="srcBtn"></i>
+        </form>
+        <div class="card"><img src="blank-profile-picture.png" alt="">
+            <h1>Name</h1>
+            <a href="#"></a>
+            <h2>Followers:</h2>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
