@@ -53,7 +53,7 @@
         text-decoration: none;
         font-size: 1.5rem;
         margin-bottom: 20px;
-        color:rgb(50, 144, 154);
+        color: rgb(50, 144, 154);
     }
 
     form>label {
@@ -74,6 +74,25 @@
         font-size: 1.5rem;
         vertical-align: middle;
         cursor: pointer;
+    }
+
+
+    /* -----------------mobile------------------ */
+    @media screen and (max-width: 600px) {
+        .main {
+            flex-direction: column;
+            background-position: right 600px;
+        }
+
+        form>#search {
+            width: 250px;
+            height: 50px;
+        }
+
+        .card {
+            width: 300px;
+            height: 330px;
+        }
     }
 </style>
 
